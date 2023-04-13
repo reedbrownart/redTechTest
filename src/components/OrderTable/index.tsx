@@ -43,7 +43,9 @@ export default function OrderTable(props: {
 
   useEffect(() => {
     if (search.length > 0) {
-      setLocalRows(rows.filter((row) => row.customerName.toUpperCase().startsWith(search.toUpperCase())))
+      setLocalRows(rows.filter((row) => row.orderId.toUpperCase().startsWith(search.toUpperCase())))
+    } else {
+      setLocalRows(rows);
     }
   }, [search, rows]);
 
