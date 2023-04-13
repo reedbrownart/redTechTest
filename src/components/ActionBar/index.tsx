@@ -23,7 +23,7 @@ export default function ActionBar(props: {
   setInitialOrderType: Dispatch<SetStateAction<string>>;
   setSearch: Dispatch<SetStateAction<string>>;
   getData: Function;
-  toBeDeleted: Array<any>;
+  toBeDeleted: Array<string>;
 }) {
   const { setInitialOrderType, setSearch, getData, toBeDeleted } = props;
 

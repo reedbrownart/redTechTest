@@ -50,11 +50,12 @@ export default function OrderTable(props: {
   return (
     <Grid container style={{ height: "calc(100% - 155px)", width: "100%" }}>
       <DataGrid
-        getRowId={(row: any) => row.orderId}
+        getRowId={(row: Row) => row.orderId}
         rows={localRows}
         columns={columns}
         checkboxSelection
         onRowSelectionModelChange={(selections) => setToBeDeleted(selections)}
+        sx={{ overflow: 'hidden' }}
       />
     </Grid>
   );

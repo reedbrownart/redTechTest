@@ -1,7 +1,13 @@
 import Request from "./request";
 
-export default async function createOrder(order: any) {
-  const createdOrder: any = await Request(
+interface Order {
+  createdByUserName: string;
+  orderType: string;
+  customerName: string;
+}
+
+export default async function createOrder(order: Order) {
+  const createdOrder = await Request(
     "post",
     "https://red-candidate-web.azurewebsites.net/api/Orders",
     order

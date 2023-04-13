@@ -15,13 +15,13 @@ export default function Header() {
       position="static"
       sx={{ backgroundColor: "#fff", color: "#000000" }}
     >
-      <Toolbar>
+      <Toolbar disableGutters sx={{ minHeight: "64px" }}>
         <IconButton
           size="large"
           edge="start"
           color="inherit"
           aria-label="menu"
-          sx={{ mr: 2 }}
+          sx={{ ml: 1, mr: 1 }}
         >
           <MenuIcon />
         </IconButton>
