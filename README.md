@@ -6,5 +6,4 @@ Main branch is the production-ready bundle for GitHub Pages.
 
 To build locally, go to the build branch and run
 
-$ npm install
-$ npm start
+$ npm install start
