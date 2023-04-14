@@ -16,6 +16,9 @@ export default function Header() {
       sx={{ backgroundColor: "#fff", color: "#000000" }}
     >
       <Toolbar disableGutters sx={{ minHeight: "64px" }}>
+
+        {/* This button doesn't have functionality though it was in the design */}
+
         <IconButton
           size="large"
           edge="start"
@@ -28,6 +31,9 @@ export default function Header() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Home
         </Typography>
+
+        {/* These buttons do not have functionality though they were in the design */}
+
         <Grid>
           <IconButton
             size="large"
